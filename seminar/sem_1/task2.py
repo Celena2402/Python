@@ -21,3 +21,22 @@ if e>max:
     max=e
 
 print(max)
+
+
+#второй вариант
+a = 5
+data=[]
+
+for count in range(0,a):
+    data.append(int(input("Input number:")))
+
+maxl = data[0] #init max
+
+for value in data:
+    print (value)
+    if value > maxl:
+        maxl = value
+        
+#max=max(data)
+print (value)
+print ("max: ", maxl)
