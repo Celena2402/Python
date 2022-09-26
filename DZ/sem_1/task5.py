@@ -12,8 +12,6 @@ print('Введите координаты второй точки B')
 xb=int(input('x= '))
 yb=int(input('y= '))
 
-#double result=Math.Sqrt((userX2-userX1)*(userX2-userX1)+(userY2-userY1)*(userY2-userY1));
-#result= Math.Round(result,2); // округление значения
-#Console.WriteLine($"Расстояние между точками {userX1}:{userY1} и {userX2}:{userY2} равно {result} ");
-
-result=
+import math
+result=round(math.sqrt((xb-xa)**2+(yb-ya)**2),2)
+print(f"Расстояние между точками А({xa},{xb}) и B({xb},{yb}) равно {result}")
