@@ -6,9 +6,6 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-from unittest import result
-
-
 print('Введите координаты точки (Х и Y), причем X ≠ 0 и Y ≠ 0')
 x=int(input('Введите  значение X= '))
 y=int(input('Введите  значение Y= '))
