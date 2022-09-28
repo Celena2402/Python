@@ -12,3 +12,4 @@ print()
 # 2.
 f = 1
 print(*(f:=int(f * (i+1)) for i in range(n)), sep=', ')
+
