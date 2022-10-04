@@ -41,9 +41,9 @@ part_list = FractionalPart(list)  # дробные части списка
 print(part_list)
 
 # нахождение max и min с помощью встроенной функции
-# max_list=max(part_list)
-# min_list=min(part_list)
-#print(f'max= {max_list}, min= {min_list}, max-min= {round(abs(max_list-min_list),2)}')
+max_list=max(part_list)
+min_list=min(part_list)
+print(f'max= {max_list}, min= {min_list}, max-min= {round((max_list-min_list),2)}')
 
 # нахождение max и min методом перебора
 max_min = MaxMin(part_list)
