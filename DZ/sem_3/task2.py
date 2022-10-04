@@ -16,12 +16,13 @@ def ProductNumbers(new_list):
     if len(list) % 2 == 0:
         leng = len(list) // 2
     else:
-        leng = len(list)// 2 + 1
+        leng = len(list) // 2 + 1
 
     for i in range(0, leng):
         pr = new_list[i] * new_list[len(new_list) - i - 1]
         list1.append(pr)
     return list1
+
 
 n = int(input('Введите количество элементов в списке: '))
 list = NewList(n)

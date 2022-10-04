@@ -10,7 +10,7 @@ list = [random.randint(0, 10) for i in range(n)]
 print(list)
 
 sum = 0
-for i in range(0, len(list), 2):
+for i in range(1, len(list), 2):
     print(list[i], end = ' ')
     sum = sum + list[i]
 
