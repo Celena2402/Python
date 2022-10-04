@@ -17,3 +17,4 @@ for i in range(len(new_list)):
     new_list[i] = new_list[k]
     new_list[k] = temp
 print('Новый список: ', new_list)
+
