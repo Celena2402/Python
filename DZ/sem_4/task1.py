@@ -5,8 +5,8 @@
 from decimal import Decimal
 n = Decimal(input('Введите вещественное число N= '))
 d = Decimal(input('Введите точно сть d= '))
+#d=len(input("Введите число d с заданной точностью:\n").split(".")[1])
 
 number = n.quantize(Decimal(d))
-print(number)
 
 print(f'Если число {n} округлить с точностью {d}, то получится число {number}')

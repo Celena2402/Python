@@ -17,6 +17,9 @@ for i in range(3, int(math.sqrt(n))+1, 2):
         prime_factors.append(i)
         n = n//i
 
+if n!=1:
+    prime_factors.append(n)
+
 #print(prime_factors)
 print(f'Число {num} можно разложить на множители {prime_factors}')
 #print('{} = {}' .format(num, prime_factors))
