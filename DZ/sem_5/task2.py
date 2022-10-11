@@ -8,17 +8,38 @@
 #          a) Добавьте игру против бота
 #          b) Подумайте как наделить бота "интеллектом"
 
+import random
 
-count_of_sticks = int(input('введите количество палочек для игры: '))
-gamer_1, gamer_2 = input('введите имя 1 игрока: '), input('введите имя 2 игрока: ')
-current_gamer = gamer_1
-while count_of_sticks > 0:
-    print('количество оставшихся палочек: {}'.format(count_of_sticks))
+
+candies=20
+print(f'На столе лежит {candies} конфета.')
+print('За один ход можно забрать не более чем 28 конфет.')
+gamer_1, gamer_2 = input('Введите имя 1 игрока: '), input('Введите имя 2 игрока: ')
+#current_gamer = gamer_1
+
+# Жеребьевка
+gamer=random.choice([gamer_1,gamer_2])
+print(f'По жеребьевке первым ходит игрок {gamer}')
+
+# if gamer==gamer_1:
+#     gamer_all=gamer_1
+# else:
+#     gamer_all=gamer_2
+
+
+while candies > 0:
+    print('Количество оставшихся конфет: {}'.format(candies))
     while True:
-        number_to_delete = int(input('ход игрока {} (1 - 3): '.format(current_gamer)))
-        if number_to_delete >= 1 and number_to_delete <= 3:
+        number_to_delete = int(input('Ход игрока {} (1 - 28): '.format(gamer_12)))
+        if number_to_delete >= 1 and number_to_delete <= 28:
             break
-    count_of_sticks -= number_to_delete
-    current_gamer = gamer_2 if current_gamer == gamer_1 else gamer_1
+        else:
+            print('Вы взяли количество конфет меньше 1 шт или больше 28 шт')
 
-print('Победил {}'.format(current_gamer))
+    #candies -= number_to_delete
+    candies=candies-number_to_delete
+    gamer_12 = gamer_2 if gamer_1 == gamer_1 else gamer_1
+
+print('УРА!!! Победил(а) {}'.format(gamer_12))
+
+

@@ -3,11 +3,11 @@
 
 
 
-line = 'автобус абв дубина выбойка книга тетрадь забота взбивка слово вербена арка'
+line = 'автобус абв дубина выбойка вба книга тетрадь забота взбивка слово вербена арка'
 
-print(line)
+print(f'\nИсходный список: {line}')
 
-print(" ".join([x for x in line.split() if not x.startswith(("а","б","в"))]))
+print(f'\nИтоговый список: {" ".join([x for x in line.split() if not x.startswith(("а","б","в"))])}')
 
 
 
