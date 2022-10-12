@@ -39,7 +39,7 @@ def check_win(board):
    return False
 
 # Запускаем все фукции
-def main(board):
+def basic(board):
     counter = 0
     win = False
     while not win:
@@ -59,6 +59,6 @@ def main(board):
             print("Ничья!")
             break
     draw_board(board)
-main(board)
+basic(board)
 
 input("Нажмите Enter для выхода!")
