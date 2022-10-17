@@ -15,8 +15,7 @@ data_1=[x for x in set(lst)]
 new_lst1=list(filter(lambda x: lst.count(x)>1, data_1))
 print(new_lst1)
 
-new_lst2=[]
-new_lst2=list(filter(lambda x: x not in new_lst2, data_1))
+new_lst2 = list(filter(lambda x: x not in new_lst2, data_1))
 print(new_lst2)
 
 # ************
