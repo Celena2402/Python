@@ -17,19 +17,19 @@ def create(device=1):
 
     return xml
 
-def new_create(data, device = 1):
-    t,p,w=data
-    t=t*1.8+32 # температура будет выводиться по Фарингейту
-    xml='<xml>\n'
-    xml+='   <Temperature units= "f">{}</temperature>\n'\
-        .format(t)
-    xml+='   <Pressure units="mmHg">{}</pressure>\n'\
-        .format(p)
-    xml+='   <wind_speed units = "m/s">{}</wind_speed>\n'\
-        .format(w)
-    xml+='</xml>'
+# def new_create(data, device = 1):
+#     t,p,w=data
+#     t=t*1.8+32 # температура будет выводиться по Фарингейту
+#     xml='<xml>\n'
+#     xml+='   <Temperature units= "f">{}</temperature>\n'\
+#         .format(t)
+#     xml+='   <Pressure units="mmHg">{}</pressure>\n'\
+#         .format(p)
+#     xml+='   <wind_speed units = "m/s">{}</wind_speed>\n'\
+#         .format(w)
+#     xml+='</xml>'
 
-    with open('new_data.xml', 'w') as page:
-        page.write(xml)
+#     with open('new_data.xml', 'w') as page:
+#         page.write(xml)
 
-    return data
+#     return data

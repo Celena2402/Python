@@ -18,18 +18,18 @@ def create(device=1):
     return html
 
 
-def new_create(data, device = 1):
-    t, p,w =data
-    style='style="font-size:30px;"'
-    html='<html>\n <head></head>\n  <body>\n'
-    html+='   <p {}>Temperature: {} c</p>\n'\
-        .format(style, t)
-    html+='   <p {}>pressure: {} c</p>\n'\
-        .format(style, p)
-    html+='   <p {}>wind_speed: {} c</p>\n'\
-        .format(style, w)
+# def new_create(data, device = 1):
+#     t, p,w =data
+#     style='style="font-size:30px;"'
+#     html='<html>\n <head></head>\n  <body>\n'
+#     html+='   <p {}>Temperature: {} c</p>\n'\
+#         .format(style, t)
+#     html+='   <p {}>pressure: {} c</p>\n'\
+#         .format(style, p)
+#     html+='   <p {}>wind_speed: {} c</p>\n'\
+#         .format(style, w)
 
-    with open('new_index.html', 'w') as page:
-        page.write(html)
+#     with open('new_index.html', 'w') as page:
+#         page.write(html)
 
-    return data
+#     return data
