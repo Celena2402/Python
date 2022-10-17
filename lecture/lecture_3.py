@@ -179,21 +179,22 @@
 
 # res=map(int,data)
 # res=filter(lambda x: not x%2,res)
-# res=list(map(lambda x: (x,x**2), res))
+# res1=list(map(lambda x: (x,x**2), res))
 # print(res)
+# print(res1)
 
 #-------------------
 # Функция ZIP
 
-users=['user1','user2','user3','user4','user5']
-ids=[4,5,9,14,7]
-salaty=[111,222,333]
+# users=['user1','user2','user3','user4','user5']
+# ids=[4,5,9,14,7]
+# salaty=[111,222,333]
 
-data=list(zip(users,ids,salaty))
-print(data)
+# data=list(zip(users,ids,salaty))
+# print(data)
 
-#-------------------
-# Функция ENUMERATE
+# #-------------------
+# # Функция ENUMERATE
 
-data=list(enumerate(users))
-print(data)
+# data=list(enumerate(users))
+# print(data)
