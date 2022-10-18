@@ -10,19 +10,18 @@
 # (генерируемого или загружаемого).
 #       В качестве формата файла можно использовать форматы csv, json, xml
 
-#---------------------
-# Модуль 1: сбор информации с датчиков
-# Модуль 2: логирование
-# Модуль 3: UI
-# Модуль 4: HTML-генератор
-# Модуль 5: главный модуль
-#---------------------------
 
-import html_creater as hc
-import xml_generator as xg
-import data_provider as dp
+import UI_reference as ui
+import logging_reference as lr
+import html_reference as hr
+import xml_referebce as xr
 
-print(hc.create())
-print(xg.create())
+ui.name_view(lr.name_logger)
+ui.surname_view(lr.surname_logger)
+ui.birthday_view(lr.birthday_logger)
+ui.place_work_view(lr.place_work_logger)
+ui.phone_view(lr.phone_logger)
 
-#hc.new_create(xg.new_create(dp.data_collection()))
+
+#print(hr.create())  # html
+#print(xr.create())  # xml
