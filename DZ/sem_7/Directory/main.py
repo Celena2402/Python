@@ -22,6 +22,10 @@ ui.birthday_view(lr.birthday_logger)
 ui.place_work_view(lr.place_work_logger)
 ui.phone_view(lr.phone_logger)
 
+# вывод справочника в консоль
+print()
+print('Содержимое справочника: ')
+print(lr.write_reference())
 
 #print(hr.create())  # html
 #print(xr.create())  # xml
