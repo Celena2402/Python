@@ -635,5 +635,17 @@ if __name__ == '__main__':
 # #     await message.answer('Данные введены')
 # #     await state.finish()
 
+# from aiogram.types import ReplyKeyboardMarkup, KeyboardButton  # pip install aiogram
+# #from aiogram import Dispatcher, Bot, executor, types
+# #from random import randint, choice
+# #from string import ascii_letters, digits, punctuation
 
+# # Создание клавиатуры
+# btn_add = KeyboardButton('Добавить')
+# btn_save = KeyboardButton('Сохранить')
+# btn_output = KeyboardButton('Просмотр')
+# btn_del= KeyboardButton('Удаление')
+# btn_editing = KeyboardButton('Редактирование')
+
+# main_menu = ReplyKeyboardMarkup(resize_keyboard=True).add(btn_add, btn_save, btn_output, btn_del,btn_editing)
 
